@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+    justify-content: center;
+}
+
+.header-wrapper{
+    height: 100px;
+    align-items: center;
+}
+
+.color{
+    color:#1ee2e7;
+}
+
+.my-nav{
+    color:white;
+    background: black;
+}
+
+.navbar a {
+    color: #1ee2e7;
+    font-weight: 700;
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+.footer{
+    background: black;
+    color: #1ee2e7;
+    text-align: center;
+}
+
+.blog-post{
+    margin: 40px 0 40px 0;
+    line-height: 1.5em;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+button{
+    display: inline-block;
+    background: purple;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    font-size: .97em;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+button:hover{
+    opacity: 0.8;
+}
