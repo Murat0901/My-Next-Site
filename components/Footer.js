@@ -1,7 +1,7 @@
 
 function footer() {
     return (
-        <div className="footer navbar">
+        <div className="footer">
             Design by Murat Menzilci with Next.js
         </div>
     )

@@ -7,7 +7,7 @@ function Layout ({ children }) {
         <div>
             <Header />
             <Navigation />
-            <main className="container pt-3">
+            <main>
                 {children}
             </main>
             <Footer />

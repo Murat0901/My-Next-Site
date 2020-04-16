@@ -3,8 +3,10 @@ import Layout from '../components/Layout'
 function contact() {
     return (
         <Layout>
-            <h1>You Can Contact Me</h1>
-            <p>Contact me</p>
+            <div className="contact">
+                <h1>You Can Contact Me</h1>
+                <p>Feel Free to Contact me</p>
+            </div>
         </Layout>
     )
 }

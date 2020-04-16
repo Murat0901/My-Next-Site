@@ -1,36 +1,20 @@
-import Layout from '../components/Layout'
-import unfetch from 'isomorphic-unfetch'
+import Layout from "../components/Layout";
+import Link from "next/link";
 
-function index({ blogs }) {
-    return (
-        <Layout>
-            <div>
-                <h1 className="color">Murat Menzilci'nin Kişisel Blogu</h1>
-                <ul>
-                    {blogs.map(blog => (
-                        <article className="container">
-                            <div className="blog-post">
-                                <h2>{blog.title}</h2>
-                                <p>{blog.content}</p>
-                            </div>
-
-                        </article>
-                    ))}
-                </ul>
-            </div>
-        </Layout>
-    )
+function index() {
+  return (
+    <Layout>
+      <div className="page-body">
+        <div className="home-text">Kişisel Web Siteme Hoş Geldiniz</div>
+        <h1 className="pt-3 mt-3">Murat Menzilci</h1>
+        <Link href="blog/">
+          <a>
+            <button className="home-button">Blog Yazılarım</button>
+          </a>
+        </Link>
+      </div>
+    </Layout>
+  );
 }
 
-export async function getStaticProps() {
-
-    const data = await unfetch('http://localhost:8000/blog/');
-    const blogs = await data.json();
-    return {
-        props: {
-            blogs
-        }
-    }
-}
-
-export default index
+export default index;
