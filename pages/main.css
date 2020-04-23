@@ -1,128 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+ol,
+ul,
+dl {
+  margin-bottom: 0;
+}
+
 body {
     font-family: 'Lora', serif;
     justify-content: center;
+    line-height: 1.6;
+    height: 100vh;
+    font-size: 1.2rem;
+    position: relative;
 }
 
-.header-wrapper{
-    height: 100px;
-    align-items: center;
+section{
+    padding-top: 80px;
+    height: 100vh;
 }
 
-.color{
-    color:#1ee2e7;
+.my-nav a{
+    text-decoration: none;
 }
 
-.my-nav{
+ul{
+    list-style: none;
+}
+
+.my-container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.my-navbar{
+    padding: 0.5rem 0 0.5rem 0;
+    background-color: black;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    width: 100%;
+}
+
+.my-brand{
+    font-size: 1.3rem;
     color:white;
-    background: black;
+    padding-top: 0.3rem;
 }
 
-.navbar a {
-    color: #1ee2e7;
-    font-weight: 700;
+.my-navbar .my-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.navbar a:hover{
+.my-navbar .my-nav{
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-navbar .my-nav a{
+    padding: 0 1.2rem 0 1.2rem;
+}
+
+#home{
+    margin: 2rem 0;
+}
+
+#home .my-container{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.my-btn{
+    display: inline-block;
+    background-color: purple;
     color: white;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 0.9rem;
+    font-size: 1.2rem;
+}
+
+.my-btn:hover{
+    opacity: 0.9;
+}
+
+
+
+#about .my-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#contact .my-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background: black;
-    color: #1ee2e7;
-    text-align: center;
-    padding: 25px;
-}
-
-.pages{
-    height: 100vh;
-}
-
-.page-body{
-    text-align: center;
-    color: #fff;
-    background-attachment: scroll;
-    background-image: url(https://unsplash.imgix.net/uploads%2F14115408840644deb16b0%2F2dc933e3?q=75&fm=jpg&auto=format&s=7f43646e4d26049c6c39890afb2e5ced);
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    margin: auto;
-    height: 100vh;
-}
-
-.home-text{
-    padding-top: 100px;
-    padding-bottom: 50px;
-    font-size: 60px;
-    font-weight: bold;
-}
-
-.dark-mode{
-    background: #243447;
-    color:#1ee2e7;
-}
-
-.home-button{
-    padding: 20px 40px;
-    font-size: 20px;
-    margin: 50px 0 0 0;
-    background: purple;
     color:white;
-    border-radius: 0.9em;
-    border: none;
-}
-
-.blog-post{
-    margin: 40px 0 40px 0;
-    line-height: 1.5em;
-}
-
-.blog-title{
-    padding: 7px;
-    background-color: #1ee2e7;
-    border: purple solid 2px;
-    border-radius: 0.2em;
-}
-
-.contact{
     text-align: center;
-    background: gray;
-    width: 80%;
-    margin: auto;
+    padding:2rem
 }
 
-h1{
-    text-align: center;
-    font-weight: bold;
+.footer ul{
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
-.header-button{
-    display: inline-block;
-    background: purple;
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-top: 15px;
-    font-size: .97em;
-    font-weight: bolder;
-    vertical-align: middle;
-}
-
-.night-button{
-    background: purple;
-    border: none;
-    color:white;
-    margin: 5px 0 5px 5px ;
-    display: inline-block;
-    border-radius: 0.2em;
-}
-
-button:hover{
-    opacity: 0.8;
+.footer li{
+    padding: 0 30px 0 30px;
 }

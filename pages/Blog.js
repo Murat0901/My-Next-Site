@@ -4,7 +4,7 @@ import unfetch from "isomorphic-unfetch";
 function Blog({ blogs }) {
   return (
     <Layout>
-      <div className="pages">
+      <div>
         <h1>Kişisel Notlarım</h1>
         <ul>
           {blogs.map((blog) => (
