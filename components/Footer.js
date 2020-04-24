@@ -2,10 +2,9 @@ import { FaGithub, FaTwitter,FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
 function footer() {
-  const size = 35;
+  const size = 30;
   return (
     <div className="footer">
-      <p>Design by Murat Menzilci with Next.js</p>
       <ul>
         <li>
           <Link href="https://github.com/Murat0901">
@@ -29,7 +28,7 @@ function footer() {
           </Link>
         </li>
       </ul>
-      <p>V 0.0.1</p>
+      <p>Design by Murat Menzilci with Next.js</p>
     </div>
   );
 }

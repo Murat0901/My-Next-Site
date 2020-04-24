@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function Navigation() {
+function BlogNavigation() {
   return (
       <div className="my-navbar">
         <div className="my-container">
@@ -12,15 +12,9 @@ function Navigation() {
               </Link>
             </li>
             <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
               <Link href="/blog">
                 <a>Blog</a>
               </Link>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -28,4 +22,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default BlogNavigation;

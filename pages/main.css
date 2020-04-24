@@ -21,6 +21,7 @@ body {
     height: 100vh;
     font-size: 1.2rem;
     position: relative;
+    background: #F9F9F9;
 }
 
 section{
@@ -34,6 +35,7 @@ section{
 
 ul{
     list-style: none;
+    margin-right: 20px;
 }
 
 .my-container{
@@ -44,7 +46,7 @@ ul{
 
 .my-navbar{
     padding: 0.5rem 0 0.5rem 0;
-    background-color: black;
+    background-color:rgba(24, 24, 24, 0.9);
     position: fixed;
     top:0;
     z-index: 1;
@@ -52,14 +54,15 @@ ul{
 }
 
 .my-brand{
-    font-size: 1.3rem;
+    font-size: 1.3rem;  
     color:white;
     padding-top: 0.3rem;
 }
 
 .my-navbar .my-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .my-navbar .my-nav{
@@ -73,15 +76,34 @@ ul{
     padding: 0 1.2rem 0 1.2rem;
 }
 
+.my-navbar .my-nav a:hover{
+    background-color: oldlace;
+    border-radius: 1.5rem;
+}
+
+@media(max-width:768px){
+    .my-navbar .my-nav{
+        display: flex;
+    }
+}
+
 #home{
     margin: 2rem 0;
+    height: 100vh;
+}
+
+#home img{
+    border-radius: 50%;
+    width: 250px;
 }
 
 #home .my-container{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
 }
+
 
 .my-btn{
     display: inline-block;
@@ -97,7 +119,10 @@ ul{
     opacity: 0.9;
 }
 
-
+#about{
+    background: #ededed;
+    height: 100vh;
+}
 
 #about .my-container{
     display: grid;
@@ -109,9 +134,24 @@ ul{
     grid-template-columns: repeat(2, 1fr);
 }
 
-.footer{
+.blog{
+    padding-top: 80px;
+}
+
+.blog-post{
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.blog ul{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
     background: black;
     color:white;
     text-align: center;

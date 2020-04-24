@@ -1,6 +1,8 @@
 import Navigation from "./Navigation"
 import Footer from './Footer'
 import Header from './Header'
+import Contact from './Contact'
+import About from './About'
 
 function Layout ({ children }) {
     return (
@@ -10,6 +12,8 @@ function Layout ({ children }) {
             <main>
                 {children}
             </main>
+            <About />
+            <Contact />
             <Footer />
         </div>
             

@@ -7,41 +7,14 @@ function index() {
     <Layout>
       <section id="home">
         <div className="my-container">
+          <img src="https://avatars2.githubusercontent.com/u/47676205?s=460&u=3db26078eadd62852afdf3f952b04d238796761d&v=4"></img>
           <h1>Kişisel Websiteme Hoş Geldiniz</h1>
           <p>Blog sayfam için tıklayın</p>
-
           <Link href="blog/">
             <a>
               <button className="my-btn">Blog Yazılarım</button>
             </a>
           </Link>
-        </div>
-      </section>
-      <section id="about">
-        <div className="my-container">
-          <h1>About Me</h1>
-          <p>I'm a web developer.</p>
-          <p>I love JavaScript, Python and React</p>
-          <Card>
-            <Card.Header>Technologies</Card.Header>
-            <ListGroup>
-              <ListGroup.Item>React</ListGroup.Item>
-              <ListGroup.Item>Next.Js</ListGroup.Item>
-              <ListGroup.Item>Django</ListGroup.Item>
-            </ListGroup>
-          </Card>
-        </div>
-      </section>
-
-      <section id="contact">
-        <div className="my-container">
-          <h1>Contact Me</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dicta
-            harum ipsa atque, ipsum provident ullam nobis! Ducimus, dolores,
-            deserunt asperiores omnis magni consequatur expedita vel in veniam,
-            tempore delectus!
-          </p>
         </div>
       </section>
     </Layout>

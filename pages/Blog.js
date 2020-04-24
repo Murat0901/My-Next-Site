@@ -1,23 +1,28 @@
-import Layout from "../components/Layout";
+import BlogNavigation from "../components/BlogNavigation";
+import Footer from "../components/Footer"
 import unfetch from "isomorphic-unfetch";
 
 function Blog({ blogs }) {
   return (
-    <Layout>
-      <div>
-        <h1>Kişisel Notlarım</h1>
-        <ul>
-          {blogs.map((blog) => (
-            <article className="container">
-              <div className="blog-post">
-                <h2 className="blog-title">{blog.title}</h2>
-                <p>{blog.content}</p>
-              </div>
-            </article>
-          ))}
-        </ul>
+      <div className="blog">
+        <BlogNavigation />
+        <div className="my-container">
+          <h1>Kişisel Notlarım</h1>
+          <ul>
+            {blogs.map((blog) => (
+              <article>
+                <div className="blog-post">
+                  <h2 className="blog-title">{blog.title}</h2>
+                  <p>{blog.content}</p>
+                  <p>{blog.dateTime}</p>
+                </div>
+              </article>
+            ))}
+          </ul>
+        </div>
+      <Footer />
       </div>
-    </Layout>
+
   );
 }
 
