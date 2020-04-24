@@ -29,7 +29,7 @@ function Blog({ blogs }) {
 export default Blog;
 
 export async function getStaticProps() {
-  const data = await unfetch("http://localhost:8000/blog/");
+  const data = await unfetch("");
   const blogs = await data.json();
   return {
     props: {
